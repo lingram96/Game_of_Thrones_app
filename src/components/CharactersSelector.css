@@ -1,0 +1,10 @@
+select{
+    color: white;
+    background-color: #30474c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    width: 20%;
+    border-radius: 8px;
+    padding: 2px;;
+}

@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import CharactersList from './components/CharactersList';
+import CharactersContainer from './containers/CharactersContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <img src="logo.png" width="400"/>
+    <h1 className="heading">Character Selector</h1>
+    <CharactersContainer/>
     </div>
   );
 }

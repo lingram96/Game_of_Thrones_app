@@ -1,0 +1,57 @@
+.character-detail{
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #b87a5d;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #30474c;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-2.png");
+    
+}
+
+img{
+    margin-bottom: 25px;
+}
+
+h1, h2{
+    color: white;
+    
+}
+
+h3{
+    font-style: italic;
+    color: #65afc4;
+}
+
+
+button{
+    background-color: #eaeadb;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 10px;
+    color: #30474c;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+
+button:hover{
+    color: white;
+    background-color:#b87a5d;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  }
+  
+p.blocktext{
+    color: #353B3C;
+    text-align: center;
+    text-align: justify;
+    margin: 50px;
+    font-weight: bold;
+}
