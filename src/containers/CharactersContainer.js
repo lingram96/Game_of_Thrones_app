@@ -3,8 +3,6 @@ import CharactersList from '../components/CharactersList';
 import CharactersDetail from '../components/CharactersDetail';
 import CharactersSelector from '../components/CharactersSelector';
 import GoodCharactersList from '../components/GoodCharactersList';
-import BadCharactersList from '../components/BadCharactersList';
-import WtfCharactersList from '../components/WtfCharactersList';
 import '../components/CharactersSelector.css';
 import '../components/CharactersDetail.css';
 
@@ -38,34 +36,12 @@ const CharactersContainer = () => {
         setCharacters(updatedCharacters)
     }
 
-    const handleBadToggle = (characterToUpdate) => {
-        const updatedCharacters = Characters.map ((character) =>{
-            if (character.fullName === characterToUpdate.fullName){
-                character.bad = !character.bad
-            }
-            return character
-        })
-        setCharacters(updatedCharacters)
-    }
-
-
-    const handleWtfToggle = (characterToUpdate) => {
-        const updatedCharacters = Characters.map ((character) =>{
-            if (character.fullName === characterToUpdate.fullName){
-                character.wtf = !character.wtf
-            }
-            return character
-        })
-        setCharacters(updatedCharacters)
-    }
-
     return(
         <>
         
         <div>
         <CharactersSelector characters={Characters} onCharacterSelected={onCharacterSelected}/>
-        {selectedCharacter ? <CharactersDetail character={selectedCharacter} onGoodToggle={handleGoodToggle}
-        onBadToggle={handleBadToggle} onWtfToggle={handleWtfToggle}/>: null}
+        {selectedCharacter ? <CharactersDetail character={selectedCharacter} onGoodToggle={handleGoodToggle}/>: null}
         </div>
         </>
     )
